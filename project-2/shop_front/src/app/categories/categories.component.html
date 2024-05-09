@@ -1,0 +1,17 @@
+<ng-container *ngIf = "logged">
+  <div class="main">
+    <div class="categories" *ngFor = "let category of categories">
+      <div class="category">
+        <h3>{{category.name}}</h3>
+        <a routerLink="{{category.id}}/products">img<img src="{{category.imageUrl}}" alt=""></a>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf = "!logged">
+  <div class="d1">
+    <h1> You need to login </h1>
+    <button routerLink="/login"> Login</button>
+  </div>
+</ng-container>

@@ -1,0 +1,14 @@
+<ng-container *ngIf="logged">
+  <h1> Cart :</h1>
+  <div class="main" *ngFor="let product of cartProducts">
+    <h2>{{product.name}}</h2>
+    <img src="{{product.imageUrl}}" alt="" class = "img">
+    <button class = "remove" (click)="remove(product.id)"> Remove from favorite </button>
+  </div>
+</ng-container>
+<ng-container *ngIf = "!logged">
+  <div class="d1">
+    <h1> You need to login </h1>
+    <button routerLink="/login"> Login</button>
+  </div>
+</ng-container>

@@ -1,0 +1,50 @@
+.main{
+  width: 100%;
+  margin-top:100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.categories{
+  border:2px solid blue;
+  margin:10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.category{
+  display: flex;
+  flex-direction: column;
+  margin:20px 0px;
+  width: 300px;
+  align-items: center;
+}
+.category img{
+  margin-top: 10px;
+  width : 200px;
+  border-radius: 20%
+}
+.category i{
+  color:green;
+  font-weight: bold;
+}
+
+.d1{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d1 button{
+  width: 80px;
+  height: 40px;
+  background-color: grey;
+  color:white;
+  border:none;
+  border-radius: 5px;
+}
+.d1 button:hover{
+  background-color: green;
+}
+

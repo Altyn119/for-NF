@@ -1,0 +1,8 @@
+<ng-container class = "top">
+  <div class="foods" *ngFor = "let product of products">
+    <h2>{{product.name}}</h2>
+    <img src="{{product.imageUrl}}" alt="" class = "img">
+    <i><h4>{{product.description}}</h4></i>
+    <button class="btn" (click)="addToFavorite(product.id)"> Add to favorite</button>
+  </div>
+</ng-container>

@@ -1,0 +1,23 @@
+.img{
+  width: 500px;
+  height: 400px;
+  border-radius: 10%
+}
+.foods{
+  margin-top: 100px;
+  margin-left: 25px;
+  padding-left: 20px;
+}
+.btn{
+  width: 100px;
+  height: 40px;
+  border:none;
+  border-radius: 5px;
+  background-color: grey;
+  color:white;
+  font-size: 16px;
+  
+}
+.btn:hover{
+  background-color: green;
+}

@@ -1,0 +1,20 @@
+<ng-container *ngIf="!logged">
+<div class="login-container">
+  <h1>Login</h1>
+  <form>
+    <label>Username:</label>
+    <input type="text" id="email" name="email" [(ngModel)]="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password">
+
+    <button type="submit" (click)="login()">Login</button>
+  </form>
+</div>
+</ng-container>
+<ng-container *ngIf="logged">
+  <div class="main">
+    <h1> You are already logged to the site</h1>
+    <button (click)="logOut()">Log out</button>
+  </div>
+</ng-container>
